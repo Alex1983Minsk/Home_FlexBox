@@ -1,0 +1,187 @@
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+    
+
+    &-properties {
+        
+        &__lists {
+            @include flex_e();
+            margin:1rem;
+
+            &_list {
+
+                &--link {
+                    text-align: center;
+                }
+                               
+                &--img {
+                    background-color: $light-gray;
+                    border:1px solid $light-gray;
+                    padding:2rem 6rem;
+                    border-radius: 10px;
+                }
+                &--img:hover {
+                    background-color: $light-gray;
+                    border:1px solid $blue;
+                    padding:2rem 6rem;
+                    border-radius: 10px;
+                }
+                &--title {
+                    font-weight: bold;
+                    color:$black;
+                    margin:0.5rem;
+                }
+                &--title:hover {
+                    font-weight: bold;
+                    margin:0.5rem;
+                    color:$blue;
+                }
+                &--description {
+                    margin:0.5rem;
+
+                }
+            }
+        }
+    }
+    &-directions {
+        &__title {
+            text-align: center;
+            font-size: $fs-36;
+            letter-spacing: $lsp-3;
+            font-weight: $fw-700;
+            margin:3rem;
+
+        }
+        &__lists {
+            @include flex_e();
+            
+            &_list {
+                margin:1rem;
+
+                &--img {
+                    text-align: center;
+                    
+                }
+                &--description {
+                    background-color: $dark-gray;
+                    color:$white;
+                    padding:1rem;
+                    font-size: $fs-14;
+                    font-weight: $fw-700;
+                    letter-spacing: $lsp-3;
+                   
+                    
+
+                }
+            }
+        }
+    }
+    &-ourcomand {
+        background-color: $light-gray;
+        max-width: 100%;
+        padding:2rem;
+        
+
+        &__title {
+            text-align: center;
+            margin:3rem;
+            font-size: $fs-36;
+            font-weight: $fw-700;
+            letter-spacing: $lsp-3;
+
+        }
+
+        &__lists {
+            @include flex_b();
+            
+            &_list {
+                text-align: center;
+                background-color: $white;
+                margin:1rem;
+                border-radius: 10px;
+
+                &--img {
+                    max-width: 100%;
+                                        
+                }
+                &--name {
+                    font-size: $fs-16;
+                    font-weight: $fw-500;
+                    margin: 1rem;
+                    letter-spacing: $lsp-3;
+
+                }
+                &--spec {
+                    margin: 1rem;
+                    font-size: $fs-16;
+                    font-weight: $fw-400;
+                    color:$gray;
+
+                }
+                &--social {
+                    @include flex_b();
+                    padding:1rem;
+                    width:80%;
+                    margin:0 auto;
+                    
+                }
+                &--social img {
+                    background-color: $light-gray;
+                    background-position: center;
+                    border-radius: 50%;
+                    padding: 5px;
+                    
+                    
+                }
+                &--social img:hover {
+                    background-color: $blue;
+                    background-position: center;
+                    border-radius: 50%;
+                    padding: 5px;
+                    
+                }
+
+                
+               
+            }
+        }
+    }
+    &-clients {
+        background-color: $white;
+        
+        &__title {
+            text-align: center;
+            margin:3rem;
+            font-size: $fs-36;
+            font-weight: $fw-700;
+            letter-spacing: $lsp-3;
+
+        }
+        &__lists {
+            @include flex_b();
+
+            &_list {
+                width: 15%;
+                text-align: center;
+                padding: 2rem;
+                border-radius: 5px;
+            }
+                      
+            &_list a {
+                border:1px solid $light-gray;
+                width: 15%;
+                text-align: center;
+                padding: 2rem;
+                border-radius: 5px;
+            }
+            &_list a:hover {
+                border:1px solid $blue;
+                width: 15%;
+                text-align: center;
+                padding: 2rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}

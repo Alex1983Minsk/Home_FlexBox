@@ -1,0 +1,123 @@
+.footer {
+    background-color: $dark-gray;
+    color:$white;
+    margin: 2rem;
+    height: 252px;
+    max-width: 100%;
+
+    display:flex;
+    align-items: center;
+   
+    &-contacts {
+        padding:2rem;
+
+        &__lists {
+            &_logo {
+                margin:2rem;
+            }
+            &_adress {
+                margin:2rem;
+
+            }
+            &_email {
+                margin:2rem;
+                
+            }
+            &_email a {
+                color:$light-gray;
+
+            }
+            &_email a:hover {
+                color:$blue;
+                transition: .3s;
+
+            }
+            &_tel {
+                margin:2rem;
+            }
+            &_tel a {
+                color:$light-gray;
+
+            }
+            &_tel a:hover {
+                color:$blue;
+                transition: .3s;
+
+            }
+        }
+    }
+    &-nav {
+     
+        &__title {
+            margin:1rem;
+            font-size: $fs-14;
+            font-weight: $fw-700;
+            letter-spacing: $lsp-3;
+
+        }
+        &__lists {
+            @include flex_b();
+
+            &_instagram a {
+                background-color: $black;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+                
+            }
+            &_instagram a:hover {
+                background-color: $blue;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+                transition: .3s;
+            }
+            &_twitter a {
+                background-color: $black;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+
+            }
+            &_twitter a:hover {
+                background-color: $blue;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+                transition: .3s;
+
+            }
+            &_facebook a {
+                background-color: $black;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+
+            }
+            &_facebook a:hover {
+                background-color: $blue;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+                transition: .3s;
+
+            }
+            &_in a {
+                background-color: $black;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+
+            }
+            &_in a:hover {
+                background-color: $blue;
+                background-position: center;
+                border-radius: 50%;
+                padding: 10px;
+                transition: .3s;
+
+            }
+
+        }
+    }
+}
